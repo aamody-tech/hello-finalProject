@@ -14,12 +14,12 @@ def generate_art():
     points = []
 
     # Generate Points
-    for thisthing in range(10):
+    for _ in range(10):
         random_point = (
             random.randint(padding_px, image_size_px - padding_px),
             random.randint(padding_px, image_size_px - padding_px),
         )
-        points.append(random_point)
+    points.append(random_point)
 
     # Draw The Points
     for i, point in enumerate(points):
@@ -31,7 +31,7 @@ def generate_art():
             p2 = points[i + 1]
 
         line_xy = (p1, p2)
-        line_color = (random.randint(0,255),random.randint(0,255),random.randint(0,255))
+        line_color = (0, 0, 0)
         draw.line(line_xy, fill=line_color)
 
     image.save("test_image.png")

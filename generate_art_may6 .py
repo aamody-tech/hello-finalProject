@@ -165,8 +165,8 @@ def generate_art(path: str):
 
 
 if __name__ == "__main__":
-    # for i in range(10):
-    #    generate_art(f"test_image_{i}.png")
+    for i in range(10):
+        generate_art(f"test_image_{i}.png")
     generate_art("test_image.png")
 
 
